@@ -9,7 +9,7 @@ const MyApps = () => {
   useEffect(() => {
     const getMyApps = async () => {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/softwareapplication/getall",
+        "portfolio-backend-production-bf5d.up.railway.app/api/v1/softwareapplication/getall",
         { withCredentials: true }
       );
       setApps(data.softwareApplications);

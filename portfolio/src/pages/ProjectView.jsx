@@ -20,7 +20,7 @@ const ProjectView = () => {
   useEffect(() => {
     const getProject = async () => {
       await axios
-        .get(`http://localhost:4000/api/v1/projrct/get/${id}`, {
+        .get(`portfolio-backend-production-bf5d.up.railway.app/api/v1/projrct/get/${id}`, {
           withCredentials: true,
         })
         .then((res) => {

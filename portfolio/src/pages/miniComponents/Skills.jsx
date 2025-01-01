@@ -17,7 +17,7 @@ const Skills = () => {
   useEffect(() => {
     const getMySkills = async () => {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/skill/getall",
+        "portfolio-backend-production-bf5d.up.railway.app/api/v1/skill/getall",
         { withCredentials: true }
       );
       setSkills(data.skills);

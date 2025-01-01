@@ -9,7 +9,7 @@ const About = () => {
     const getMyProfile = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/me/portfolio",
+          "portfolio-backend-production-bf5d.up.railway.app/api/v1/user/me/portfolio",
           { withCredentials: true }
         );
         setUser(data.user);
